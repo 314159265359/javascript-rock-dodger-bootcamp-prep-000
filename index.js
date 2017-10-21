@@ -130,6 +130,19 @@ function moveDodgerLeft() {
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
 
+var leftNumbers = dodger.style.left.replace('px', '')
+var left = parseInt(leftNumbers, 10)
+  
+   function step() {
+     el.style.left = `${left -= 4}px`
+  
+     if (left > 0) {
+       window.requestAnimationFrame(step)
+     }
+   }
+  
+   window.requestAnimationFrame(step)
+
 }
 
 function moveDodgerRight() {
