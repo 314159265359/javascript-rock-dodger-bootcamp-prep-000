@@ -121,24 +121,13 @@ function moveDodger(e) {
    */
 }
 
-function moveDodgerLeft(el) {
+function moveDodgerLeft() {
   // implement me!
   /**
    * This function should move DODGER to the left
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
 
-   var top = 0
-
-function step() {
-  el.style.top = `${right += 2}px`
-
-  if (right < 200) {
-    window.requestAnimationFrame(step)
-  }
-}
-
-window.requestAnimationFrame(step)
 }
 
 function moveDodgerRight() {
