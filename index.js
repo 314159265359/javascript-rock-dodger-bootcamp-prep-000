@@ -143,7 +143,7 @@ var left = parseInt(leftNumbers, 10)
    function step() {
      dodger.style.left = `${left -= 4}px`
 
-     if (left > 0) {
+     if (left >= 0) {
        window.requestAnimationFrame(step)
      }
    }
